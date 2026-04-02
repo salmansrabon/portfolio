@@ -42,28 +42,21 @@ export default function TechStack() {
   const isInView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section
-      id="stack"
-      className="py-24 bg-[#0D1220]"
-      ref={ref}
-    >
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="stack" className="py-20 bg-[#111827]" ref={ref}>
+      <div className="max-w-5xl mx-auto px-6">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 24 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="mb-12"
         >
-          <span className="text-[#00FFD1] font-mono text-sm tracking-widest uppercase">
-            Tools & Technologies
+          <span className="text-[#00FFD1] font-mono text-xs tracking-widest uppercase">
+            Expertise
           </span>
-          <h2 className="mt-3 text-3xl sm:text-4xl font-extrabold text-white">
-            Areas of <span className="text-gradient">Expertise</span>
+          <h2 className="mt-3 text-2xl sm:text-3xl font-bold text-white">
+            Tools &amp; Technologies
           </h2>
-          <p className="mt-4 text-gray-400 max-w-xl mx-auto">
-            Battle-tested tooling across automation, performance, security, and DevOps.
-          </p>
         </motion.div>
 
         {/* Tech Groups */}
@@ -71,34 +64,26 @@ export default function TechStack() {
           {techGroups.map((group, i) => (
             <motion.div
               key={group.category}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: i * 0.1 }}
-              className="bg-[#161D2F] border border-[#1F2A3C] rounded-2xl p-6 card-hover hover:border-[#1F2A3C] group"
-              style={{
-                ["--hover-color" as string]: group.color,
-              }}
+              transition={{ duration: 0.5, delay: i * 0.08 }}
+              className="bg-[#161D2F] border border-[#1F2A3C] rounded-xl p-5"
             >
               {/* Category label */}
-              <div className="flex items-center gap-3 mb-5">
+              <div className="flex items-center gap-2.5 mb-4">
                 <div
-                  className="w-3 h-3 rounded-full"
-                  style={{ backgroundColor: group.color, boxShadow: `0 0 8px ${group.color}60` }}
+                  className="w-2 h-2 rounded-full flex-shrink-0"
+                  style={{ backgroundColor: group.color }}
                 />
-                <h3
-                  className="font-bold text-base"
-                  style={{ color: group.color }}
-                >
-                  {group.category}
-                </h3>
+                <h3 className="font-semibold text-sm text-white">{group.category}</h3>
               </div>
 
               {/* Tool pills */}
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-1.5">
                 {group.tools.map((tool) => (
                   <span
                     key={tool}
-                    className="px-3 py-1 rounded-full text-xs font-medium border text-gray-300 border-[#1F2A3C] bg-[#0B0F19] hover:text-white transition-colors"
+                    className="px-2.5 py-1 rounded-md text-xs text-gray-400 border border-[#1F2A3C] bg-[#0B0F19]"
                   >
                     {tool}
                   </span>

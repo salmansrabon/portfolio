@@ -9,11 +9,11 @@ export default function Footer() {
           <span className="text-[#00FFD1] font-bold font-mono">{"/>"}</span>
         </div>
         <p className="text-gray-500 text-sm text-center">
-          © {year} Salman · Senior SDET · Building reliable systems at scale
+          © {year} Salman Rahman · Senior SDET · Building reliable systems at scale
         </p>
         <div className="flex items-center gap-5">
           <a
-            href="mailto:salman@example.com"
+            href="mailto:salman@roadtocareer.net"
             className="text-gray-400 hover:text-[#00FFD1] text-sm transition-colors"
           >
             Email
@@ -25,6 +25,14 @@ export default function Footer() {
             className="text-gray-400 hover:text-[#00FFD1] text-sm transition-colors"
           >
             LinkedIn
+          </a>
+          <a
+            href="https://roadtosdet.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-[#00FFD1] text-sm transition-colors"
+          >
+            Road to SDET
           </a>
         </div>
       </div>

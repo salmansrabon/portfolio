@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Hero from "@/sections/Hero";
-import WhatMakesMeDifferent from "@/sections/WhatMakesMeDifferent";
+import Summary from "@/sections/Summary";
 import TechStack from "@/sections/TechStack";
 import FeaturedProjects from "@/sections/FeaturedProjects";
 import Impact from "@/sections/Impact";
@@ -15,7 +15,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <WhatMakesMeDifferent />
+        <Summary />
         <TechStack />
         <FeaturedProjects />
         <Impact />

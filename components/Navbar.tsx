@@ -7,7 +7,7 @@ const navLinks = [
   { label: "About", href: "#about" },
   { label: "Expertise", href: "#stack" },
   { label: "Projects", href: "#projects" },
-  { label: "Achievement", href: "#achievement" },
+  { label: "Achievements", href: "#achievement" },
   { label: "Experience", href: "#experience" },
   { label: "Education", href: "#education" },
   { label: "Contact", href: "#contact" },
@@ -62,9 +62,9 @@ export default function Navbar() {
           ))}
           <a
             href="#contact"
-            className="ml-2 px-4 py-2 border border-[#00FFD1] text-[#00FFD1] text-sm font-semibold rounded-md hover:bg-[#00FFD1]/10 transition-all duration-200"
+            className="ml-2 px-4 py-2 border border-[#1F2A3C] text-gray-300 text-sm font-medium rounded-md hover:border-[#00FFD1]/50 hover:text-white transition-all duration-200"
           >
-            Make Appointment
+            Get In Touch
           </a>
         </div>
 
@@ -109,9 +109,9 @@ export default function Navbar() {
               <a
                 href="#contact"
                 onClick={() => setMenuOpen(false)}
-                className="mt-2 px-4 py-2 border border-[#00FFD1] text-[#00FFD1] text-sm font-semibold rounded-md text-center hover:bg-[#00FFD1]/10 transition-all"
+                className="mt-2 px-4 py-2 border border-[#1F2A3C] text-gray-300 text-sm font-medium rounded-md text-center hover:border-[#00FFD1]/50 hover:text-white transition-all"
               >
-                Make Appointment
+                Get In Touch
               </a>
             </div>
           </motion.div>
